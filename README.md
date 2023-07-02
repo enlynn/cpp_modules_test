@@ -18,7 +18,7 @@ This example project uses MSVC naming conventions / setup. The "File Structure" 
 A module is generally composed of three types of files:
 - Primary Module Interface (ModuleInterface.ixx)
 - Module Partition (ModuleInterface-Partition.ixx)
-- Module (Partiion) Implementation (ModuleInterface[-Partition].cpp)
+- Module (Partition) Implementation (ModuleInterface[-Partition].cpp)
 
 ## Primary Module Interface
 
