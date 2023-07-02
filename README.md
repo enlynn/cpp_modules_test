@@ -1,15 +1,12 @@
 # C++20 Module Test
 
-A very simple module implementation using C++20 and CMake based on this [MSVC Example](https://learn.microsoft.com/en-us/cpp/cpp/tutorial-named-modules-cpp?view=msvc-170)
+A very simple module experiment using C++20 and CMake based on this [MSVC Example](https://learn.microsoft.com/en-us/cpp/cpp/tutorial-named-modules-cpp?view=msvc-170)
 
 # Build
 - Build has only been tested for VS 2022
 
 ```
-# Generate CMake Files
-
-
-# Build
+# Build and Generate CMake Files. Uses Visual Studio 2022
 build.bat
 # Can alternatively launch VS with the generated solution
 ```
