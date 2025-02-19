@@ -1,4 +1,5 @@
-import cstd;
+import std;
+
 import BasicPlane.Figures;
 
 int main()

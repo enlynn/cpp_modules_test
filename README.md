@@ -3,12 +3,38 @@
 A very simple module experiment using C++20 and CMake based on this [MSVC Example](https://learn.microsoft.com/en-us/cpp/cpp/tutorial-named-modules-cpp?view=msvc-170)
 
 # Build
-- Build has only been tested for VS 2022
 
+## Windows
+
+Requirements:
+- Visual Studio 2022 version 17.5 (minimum)
+- Visual Studio CMake Tools for Windows
+- Visual Studio C++ Modules for v143 build tools
+
+Building:
+- Build from Visual Studio
+- Build from the Command Line with vcvarsall setup:
 ```
 # Build and Generate CMake Files. Uses Visual Studio 2022
-build.bat
-# Can alternatively launch VS with the generated solution
+cmake --preset x64-debug
+devenv Module_Test.sln /Build
+```
+
+## Linux
+
+Requirements:
+- Clang v18
+    - Might require the following packages to be installed separately:
+        - libcxx            (cannot find libc++ error)
+        - libcxx-devel      (cannot find libc++ error)
+        - clang-tools-extra (missing CMake tool)
+- CMake
+- Ninja
+
+Building:
+```
+cmake --preset linux-debug
+ninja -C out/build/linux-debug
 ```
 
 # Module Overview
