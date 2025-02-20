@@ -22,14 +22,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 # https://gitlab.kitware.com/cmake/cmake/-/issues/25539
 set(CMAKE_CXX_EXTENSIONS ON)
 
-# Default to C++ extensions being off. Clang's modules support have trouble
-# with extensions right now and it is not required for any other compiler
-# How true is this still?
-# set(CMAKE_CXX_EXTENSIONS OFF)
-
 set(MODULE_DIR             "${CMAKE_CURRENT_SOURCE_DIR}/code/modules")
 set(MODULE_BASIC_PLANE_DIR "${MODULE_DIR}/basic_plane")
-
 
 add_executable(test-modules)
 
